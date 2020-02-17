@@ -3,10 +3,10 @@ const app = "I don't do much."
 var dodger = document.getElementById('dodger')
 
 function moveDodgerRight(){
-  let rightStr = dodger.style.right.replace('px', '');
-  let right = parseInt(rightStr, 10);
-  if (right > 0){
-    dodger.style.right = `${right-1}px`;
+  let leftStr = dodger.style.left.replace('px', '');
+  let left = parseInt(leftStr, 10);
+  if (left > 0){
+    dodger.style.left = `${left+1}px`;
   }
 }
 

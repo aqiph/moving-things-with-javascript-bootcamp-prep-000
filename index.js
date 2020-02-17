@@ -5,7 +5,7 @@ var dodger = document.getElementById('dodger')
 function moveDodgerRight(){
   let leftStr = dodger.style.left.replace('px', '');
   let left = parseInt(leftStr, 10);
-  if (left > 0){
+  if (left < 360){
     dodger.style.left = `${left+1}px`;
   }
 }
